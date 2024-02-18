@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Age calculator</h1>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required >
+            <label for="date">Date of birth:</label>
+            <div class="date-inputs">
+                <input type="number" id="day" name="day" placeholder="day" min="1" max="31" required>
+                <input type="number" id="month" name="month" placeholder="month" min="1" max="12" required>
+                <input type="number" id="year" name="year" placeholder="year" min="1900" max="2024"  required>
+
+            </div>
+            <button type="button" onclick="calculateAge()">Guess My Age</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
